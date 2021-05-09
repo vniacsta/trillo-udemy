@@ -259,6 +259,8 @@
 
   @media only screen and(max-width: $bp-smallest) {
     flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
   }
 
   h1 {
@@ -299,6 +301,7 @@
       order: 1;
       flex: 0 0 100%;
       padding-left: 1rem;
+      padding-bottom: 1rem;
     }
   }
 
@@ -318,8 +321,11 @@
     align-items: center;
     justify-content: center;
 
-    @media only screen and(max-width: $bp-small) {
+    @media only screen and(max-width: $bp-smallest) {
       padding: 0 1.5rem;
+      position: absolute;
+      right: 0;
+      height: 8.3rem;
     }
   }
 

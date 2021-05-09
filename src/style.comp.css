@@ -214,7 +214,9 @@ body {
   border-bottom: var(--line); }
   @media only screen and (max-width: 31.25em) {
     .overview {
-      flex-wrap: wrap; } }
+      flex-wrap: wrap;
+      position: relative;
+      overflow: hidden; } }
   .overview h1 {
     font-size: 2.25rem;
     font-weight: 300;
@@ -243,7 +245,8 @@ body {
       .overview__location {
         order: 1;
         flex: 0 0 100%;
-        padding-left: 1rem; } }
+        padding-left: 1rem;
+        padding-bottom: 1rem; } }
   .overview__icon-location {
     margin-right: 0.5rem; }
   .overview__rating {
@@ -256,9 +259,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 31.25em) {
       .overview__rating {
-        padding: 0 1.5rem; } }
+        padding: 0 1.5rem;
+        position: absolute;
+        right: 0;
+        height: 8.3rem; } }
   .overview__rating-average {
     font-size: 2.25rem;
     font-weight: 300;
